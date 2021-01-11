@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="style.css" type="text/css" />
+   <script type="text/javascript" src="JS/cipherGronsfeld.js"> </script>
+   <script type="text/javascript" src="JS/script.js"></script>
+   <title>Cryptography</title>
+</head>
+
+<body>
+   <div id="main">
+      <div id="header">
+         <h1>Gronsfeld</h1>
+      </div>
+      <button class="hamburger" id="hamburger">
+         <svg height="384pt" viewBox="0 -53 384 384" width="384pt" xmlns="http://www.w3.org/2000/svg">
+            <path style="fill:#ffce00" ;
+               d="m368 154.667969h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0" />
+            <path style="fill:#ffce00"
+               d="m368 32h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0" />
+            <path style="fill:#ffce00"
+               d="m368 277.332031h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0" />
+            </svg>
+      </button>
+      <div id="menubar">
+
+         <ul id="menu" class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cipher1.html">Polybius</a></li>
+            <li><a href="cipher2.html">XOR</a></li>
+            <li class="current"><a href="cipher3.html">Gronsfeld</a></li>
+            <li><a href="cipher4.html">Caesar</a></li>
+         </ul>
+      </div>
+   </div>
+   <div id="site_content">
+      <div id="sidebar_container">
+         <div class="sidebar">
+            <div class="form_settings">
+               <p style="padding: 10px">
+                  <textarea id="textGr" style="width:100%;height:100px">Enter your text for encryption</textarea>
+                  <textarea id="keyGr" style="width:30%;height:20px">123</textarea></p>
+               <p style="padding: 10px">
+                  <input class="button" type="button" id="buttonGr" value="Encrypt" />
+                  <input class="button" type="button" id="buttonGr2" value="Decrypt" /></p>
+               <p style="padding: 10px">
+                  <textarea id="textGr2" style="width:100%;height:100px"></textarea> </p>
+            </div>
+         </div>
+      </div>
+      <div class="content">
+         <p> Gronsfeld cipher was created by José de Bronckhorst (earl of Gronsfeld) around 1744. As a Belgian
+            diplomate, a message security during exchange was very important for him.
+            The Gronsfeld cipher is a variation of the Vigenere cipher in which a key number is used instead of a
+            keyword, e.g., 14965.
+            To encrypt using this cipher, a letter of text is taken one by one, and shifted by the corresponding number
+            in the key.The key is repeated to match the message length. For example:</p>
+         <p> Plain text : NAT</p>
+         <p> Key : 123 </p>
+         <p> Ciphered text : OCW </p>
+         <p> This code does not offer any protection. However it is more harder to break that Caesar Cipher.</p>
+      </div>
+   </div>
+</body>
+
+</html>

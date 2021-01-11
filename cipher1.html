@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <script type="text/javascript" src="JS/cipherPolybius.js"></script>
+  <script type="text/javascript" src="JS/script.js"></script>
+  <title>Cryptography</title>
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <h1>Polybius</h1>
+    </div>
+    <button class="hamburger" id="hamburger">
+      <svg height="384pt" viewBox="0 -53 384 384" width="384pt" xmlns="http://www.w3.org/2000/svg">
+        <path style="fill:#ffce00" ;
+          d="m368 154.667969h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0" />
+        <path style="fill:#ffce00"
+          d="m368 32h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0" />
+        <path style="fill:#ffce00"
+          d="m368 277.332031h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0" />
+        </svg>
+    </button>
+    <div id="menubar">
+
+      <ul id="menu" class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li class="current"><a href="cipher1.html">Polybius</a></li>
+        <li> <a href="cipher2.html">XOR</a></li>
+        <li> <a href="cipher3.html">Gronsfeld</a></li>
+        <li><a href="cipher4.html">Caesar</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="site_content">
+    <div id="sidebar_container">
+      <div class="sidebar">
+        <div class="form_settings">
+          <p style="padding: 10px">
+            <textarea id="textPolybius" style="width:100%;height:100px">Enter your text for encryption</textarea>
+          </p>
+          <p style="padding: 10px">
+            <input class="button" type="button" id="buttonPolybius" value="Encrypt" />
+            <input class="button" type="button" id="buttonPolybius2" value="Decrypt" /> </p>
+          <p style="padding: 10px">
+            <textarea id="textPolybius2" style="width:100%;height:100px" padding></textarea>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <p>In cryptography, the Polybius square is a device invented by the Ancient Greek historian and scholar Polybius,
+        His tool allowed letters to be easily signaled using a numerical system. This idea also lends itself to
+        cryptographic manipulation and steganography.
+        The original square used the Greek alphabet, but it can be used with any other alphabet.
+        This is the typical form for English alphabet:</p>
+      <img src="photos/square.jpg" alt="polybius square">
+      <p>By cross-referencing the two numbers along the grid of the square, a letter could be deduced, e.g. "NAT"
+        becomes "33 11 44". Because 26 characters do not fit in a square, it is rounded down by combining two letters
+        (usually C and K or I and J).
+        By itself the Polybius square is not very secure however a Polybius square offers the possibility of
+        fractionation and becomes a useful component in some other ciphers such as the Nihilist cipher or the Bifid
+        cipher.
+      </p>
+    </div>
+  </div>
+
+</body>
+
+</html>
